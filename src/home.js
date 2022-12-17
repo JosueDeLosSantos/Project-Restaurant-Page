@@ -18,6 +18,26 @@ const menu = document.createElement('a');
 menu.innerText = 'Menu';
 const contact = document.createElement('a');
 contact.innerText = 'Contact';
+const hours = document.createElement('a');
+hours.innerText = 'Hours';
+const main = document.createElement('main');
+const center = document.createElement('div');
+center.classList.add('center');
+const welcome = document.createElement('div');
+welcome.classList.add('welcome');
+welcome.innerText = 'Welcome!';
+const centerLogo = document.createElement('div');
+centerLogo.classList.add('centerLogo');
+const logoBody = new Image();
+logoBody.src = coffe;
+const logoBodyTitle = document.createElement('div');
+logoBodyTitle.innerText = 'COFFE J';
+const motto = document.createElement('div');
+motto.classList.add('motto');
+motto.innerText = 'Serving the best breakfasts in the Dominican Republic!';
+const menuLink = document.createElement('a');
+menuLink.classList.add('menuLink');
+menuLink.innerText = 'CHECK OUT OUR MENU';
 
 export default function homePage() {
   body.appendChild(nav);
@@ -30,5 +50,13 @@ export default function homePage() {
   section2.appendChild(home);
   section2.appendChild(menu);
   section2.appendChild(contact);
-  console.log('hey');
+  section2.appendChild(hours);
+  body.appendChild(main);
+  main.appendChild(center);
+  center.appendChild(welcome);
+  center.appendChild(centerLogo);
+  centerLogo.appendChild(logoBody);
+  centerLogo.appendChild(logoBodyTitle);
+  center.appendChild(motto);
+  center.appendChild(menuLink);
 }

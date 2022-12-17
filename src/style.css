@@ -349,8 +349,49 @@
   }
 
   :root {
-    --nav-background: hsla(0, 0%, 0%, 0.493);
+    --nav-background: hsla(0, 0%, 0%, 0.623);
+    --main-background: hsla(0, 0%, 0%, 0.493);
     --nav-color: hsl(0, 0%, 100%);
+    --motto-color: hsl(66, 51%, 93%);
+  }
+
+  @font-face {
+    font-family: 'lucy';
+    src: url('./fonts/lucy/lucy.ttf') format('ttf'),
+    url('./fonts/lucy/lucy.woff') format('woff'),
+    url('./fonts/lucy/lucy.woff2') format('woff2');
+  }
+
+  @font-face {
+    font-family: 'fire-foxes';
+    src: url('./fonts/fire-foxes/fire-foxes.ttf') format('ttf'),
+    url('./fonts/fire-foxes/fire-foxes.woff') format('woff'),
+    url('./fonts/fire-foxes/fire-foxes.woff2') format('woff2');
+  }
+
+  @font-face {
+    font-family: 'woody-line';
+    src: url('./fonts/woody-line-demo/WoodyLineDemoRegular.ttf') format('ttf'),
+    url('./fonts/woody-line-demo/woodylinedemoregular-webfont.woff2') format('woff2'),
+    url('./fonts/woody-line-demo/woodylinedemoregular-webfont.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: 'high-hill';
+    src: url('./fonts/high-hill/high-hill.ttf') format('ttf'),
+    url('./fonts/high-hill/high-hill.woff') format('woff'),
+    url('./fonts/high-hill/high-hill.woff2') format('woff2');
+  }
+
+  @font-face {
+    font-family: 'Raleway';
+    src: url('./fonts/Raleway/Raleway-VariableFont_wght.ttf');
+  }
+
+  body {
+    z-index: 0;
+    background-image: url(./background.jpg);
+    background-size: cover;
   }
 
 
@@ -360,21 +401,76 @@
     background-color: var(--nav-background);
     color: var(--nav-color);
     font-size: 1rem;
+    font-weight: 600;
+    position: sticky;
+    top: 0;
+    z-index: 2;
   }
 
   img {
-    width: 20px;
+    width: 27px;
+    margin-bottom: 6px;
   }
 
   .section1 > div {
     display: flex;
     gap: 3px;
     margin-left: 20px;
+    font-family: 'woody-line';
+    font-size: 1.4rem;
+    font-weight: 100;
+
   }
 
   .section2 {
     display: flex;
     gap: 30px;
-    margin-right: 120px;
+    margin-right: 15vh;
     align-items: center;
+    font-family: 'Raleway';
+    font-weight: 100;
+  }
+
+
+  main {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    z-index: 1;
+    background-color: var(--main-background);
+  }
+
+  .center {
+    text-align: center;
+    color: var(--nav-color);
+    margin-top: 20vh;
+  }
+
+  .welcome {
+    font-family: 'lucy';
+    font-size: 3rem;
+    color: hsl(29, 90%, 84%);
+  }
+
+  .centerLogo > div {
+    font-family: 'woody-line';
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+
+  .centerLogo > img {
+    width: 40px;
+  }
+
+  .motto {
+    color: var(--motto-color);
+    font-family: 'high-hill';
+    font-size: 2rem;
+    margin-bottom: 60px;
+  }
+
+  .menuLink {
+    text-decoration: underline;
+    font-family: 'fire-foxes';
+    color: var(--motto-color);
   }

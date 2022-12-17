@@ -1,4 +1,4 @@
 import './style.css';
-import homePage from './home';
+import load from './home';
 
-homePage();
+load();

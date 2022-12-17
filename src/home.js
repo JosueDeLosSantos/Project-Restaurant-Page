@@ -1,3 +1,5 @@
+import coffe from './coffee.svg';
+
 const body = document.querySelector('body');
 const nav = document.createElement('nav');
 const section1 = document.createElement('section');
@@ -5,7 +7,8 @@ section1.classList.add('section1');
 const section2 = document.createElement('section');
 section2.classList.add('section2');
 const divLogo = document.createElement('div');
-const logo = document.createElement('div');
+const logo = new Image();
+logo.src = coffe;
 const logoTitle = document.createElement('div');
 const logoTitleP = document.createElement('p');
 logoTitleP.innerText = 'Coffe J';

@@ -358,7 +358,18 @@
     display: flex;
     justify-content: space-between;
     background-color: var(--nav-background);
-    color: var(--nav-color)
+    color: var(--nav-color);
+    font-size: 1rem;
+  }
+
+  img {
+    width: 20px;
+  }
+
+  .section1 > div {
+    display: flex;
+    gap: 3px;
+    margin-left: 20px;
   }
 
   .section2 {

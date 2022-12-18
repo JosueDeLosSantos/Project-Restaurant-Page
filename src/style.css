@@ -442,7 +442,7 @@
   main {
     display: flex;
     justify-content: center;
-    height: 100vh;
+    height: 120vh;
     z-index: 1;
     background-color: var(--main-background);
   }
@@ -484,8 +484,8 @@
 
   .menuCard {
     background: var(--menu-card);
-    height: 90vh;
-    padding: 20px;
+    height: 100vh;
+    padding: 20px 20px 90px 20px;
   }
 
   .menuTitle {
@@ -498,6 +498,7 @@
     color: var(--nav-color);
     font-size: 1.5rem;
     margin-top: 50px;
+    font-family: 'Raleway';
   }
 
   .hotTitle, .coldTitle, .menuTitle{
@@ -509,6 +510,7 @@
     padding-left: 0;
     color: var(--motto-color);
     font-size: 1.2rem;
+    font-family: 'Raleway';
     display: flex;
     flex-direction: column;
     gap: 10px;

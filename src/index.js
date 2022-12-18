@@ -1,4 +1,22 @@
 import './style.css';
-import load from './home';
+import * as home from './home';
+import * as menu from './menu';
 
-load();
+home.homePage();
+
+home.menu.addEventListener('click', () => {
+  home.homePageClear();
+  menu.menuCard();
+});
+
+home.contact.addEventListener('click', () => {
+  home.homePageClear();
+});
+
+home.hours.addEventListener('click', () => {
+  home.homePageClear();
+});
+
+home.home.addEventListener('click', () => {
+  location.reload();
+});

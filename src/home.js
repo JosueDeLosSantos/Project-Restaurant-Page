@@ -12,16 +12,20 @@ logo.src = coffe;
 const logoTitle = document.createElement('div');
 const logoTitleP = document.createElement('p');
 logoTitleP.innerText = 'Coffe J';
-const home = document.createElement('a');
+export const home = document.createElement('a');
+home.classList.add('home');
 home.innerText = 'Home';
-const menu = document.createElement('a');
+export const menu = document.createElement('a');
+menu.classList.add('menu');
 menu.innerText = 'Menu';
-const contact = document.createElement('a');
+export const contact = document.createElement('a');
+contact.classList.add('contact');
 contact.innerText = 'Contact';
-const hours = document.createElement('a');
+export const hours = document.createElement('a');
+hours.classList.add('hours');
 hours.innerText = 'Hours';
-const main = document.createElement('main');
-const center = document.createElement('div');
+export const main = document.createElement('main');
+export const center = document.createElement('div');
 center.classList.add('center');
 const welcome = document.createElement('div');
 welcome.classList.add('welcome');
@@ -34,12 +38,12 @@ const logoBodyTitle = document.createElement('div');
 logoBodyTitle.innerText = 'COFFE J';
 const motto = document.createElement('div');
 motto.classList.add('motto');
-motto.innerText = 'Serving the best breakfasts in the Dominican Republic!';
+motto.innerText = 'Serving the best coffe in the Dominican Republic!';
 const menuLink = document.createElement('a');
 menuLink.classList.add('menuLink');
 menuLink.innerText = 'CHECK OUT OUR MENU';
 
-export default function homePage() {
+export function homePage() {
   body.appendChild(nav);
   nav.appendChild(section1);
   nav.appendChild(section2);
@@ -59,4 +63,15 @@ export default function homePage() {
   centerLogo.appendChild(logoBodyTitle);
   center.appendChild(motto);
   center.appendChild(menuLink);
+}
+
+export function homePageClear() {
+  body.removeChild(main);
+  main.removeChild(center);
+  center.removeChild(welcome);
+  center.removeChild(centerLogo);
+  centerLogo.removeChild(logoBody);
+  centerLogo.removeChild(logoBodyTitle);
+  center.removeChild(motto);
+  center.removeChild(menuLink);
 }

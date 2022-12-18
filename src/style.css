@@ -353,6 +353,8 @@
     --main-background: hsla(0, 0%, 0%, 0.493);
     --nav-color: hsl(0, 0%, 100%);
     --motto-color: hsl(66, 51%, 93%);
+    --welcome-color: hsl(29, 90%, 84%);
+    --menu-card: linear-gradient(to bottom right, hsl(21deg 36% 15%), hsl(21deg 96% 15%));
   }
 
   @font-face {
@@ -386,6 +388,11 @@
   @font-face {
     font-family: 'Raleway';
     src: url('./fonts/Raleway/Raleway-VariableFont_wght.ttf');
+  }
+
+  @font-face {
+    font-family: 'bebasnue';
+    src: url('./fonts/Bebas_Neue/BebasNeue-Regular.ttf');
   }
 
   body {
@@ -449,7 +456,7 @@
   .welcome {
     font-family: 'lucy';
     font-size: 3rem;
-    color: hsl(29, 90%, 84%);
+    color: var(--welcome-color);
   }
 
   .centerLogo > div {
@@ -473,4 +480,36 @@
     text-decoration: underline;
     font-family: 'fire-foxes';
     color: var(--motto-color);
+  }
+
+  .menuCard {
+    background: var(--menu-card);
+    height: 90vh;
+    padding: 20px;
+  }
+
+  .menuTitle {
+    color: var(--nav-color);
+    font-family: 'bebasnue';
+    font-size: 3rem;
+  }
+
+  .hotTitle, .coldTitle{
+    color: var(--nav-color);
+    font-size: 1.5rem;
+    margin-top: 50px;
+  }
+
+  .hotTitle, .coldTitle, .menuTitle{
+    text-align: center;
+  }
+
+  .hotList, .coldList{
+    list-style: none;
+    padding-left: 0;
+    color: var(--motto-color);
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }

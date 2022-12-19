@@ -354,7 +354,8 @@
     --nav-color: hsl(0, 0%, 100%);
     --motto-color: hsl(66, 51%, 93%);
     --welcome-color: hsl(29, 90%, 84%);
-    --menu-card: linear-gradient(to bottom right, hsl(21deg 36% 15%), hsl(21deg 96% 15%));
+    --menu-card: linear-gradient(to bottom right, hsl(21, 37%, 15%), hsl(21deg 100% 15%));
+    --contacts-card: linear-gradient(to bottom right, hsl(15, 90%, 84%), hsl(29, 90%, 84%));
   }
 
   @font-face {
@@ -482,8 +483,14 @@
     color: var(--motto-color);
   }
 
-  .menuCard {
+  .menuCard{
     background: var(--menu-card);
+    height: 100vh;
+    padding: 20px 20px 90px 20px;
+  }
+
+  .contactsCard {
+    background: var(--contacts-card);
     height: 100vh;
     padding: 20px 20px 90px 20px;
   }

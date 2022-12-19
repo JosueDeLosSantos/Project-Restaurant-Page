@@ -79,10 +79,10 @@ export function homePageClear() {
   section2.removeChild(hours);
   body.removeChild(main);
   main.removeChild(center);
-  center.removeChild(welcome);
+  /* center.removeChild(welcome);
   center.removeChild(centerLogo);
   centerLogo.removeChild(logoBody);
   centerLogo.removeChild(logoBodyTitle);
   center.removeChild(motto);
-  center.removeChild(menuLink);
+  center.removeChild(menuLink); */
 }

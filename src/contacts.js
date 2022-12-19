@@ -28,6 +28,84 @@ hours.innerText = 'Hours';
 export const main = document.createElement('main');
 export const contacts = document.createElement('div');
 contacts.classList.add('contactsCard');
+export const contactsTitle = document.createElement('div');
+contactsTitle.classList.add('contactsTitle');
+contactsTitle.innerText = 'Contacts';
+const manager = document.createElement('div');
+manager.classList.add('manager');
+const managerTitle = document.createElement('div');
+managerTitle.classList.add('managerTitle');
+managerTitle.innerText = 'Manager';
+const managerList = document.createElement('ul');
+managerList.classList.add('managerList');
+const customerService = document.createElement('div');
+customerService.classList.add('customerService');
+const customerServiceTitle = document.createElement('div');
+customerServiceTitle.classList.add('customerServiceTitle');
+customerServiceTitle.innerText = 'Customer Service';
+const customerServiceList = document.createElement('ul');
+customerServiceList.classList.add('customerServiceList');
+const location = document.createElement('div');
+location.classList.add('location');
+const locationTitle = document.createElement('div');
+locationTitle.classList.add('locationTitle');
+locationTitle.innerText = 'Location';
+const locationList = document.createElement('div');
+locationList.classList.add('locationList');
+locationList.innerText =
+  'Av Ing Roberto Pastoriza 110, Santo Domingo, Dominican Republic';
+
+const managerArr = {
+  Email: 'somemanager@outlook.com',
+  Fax: '555-333-4555',
+};
+
+const customerServiceArr = {
+  Email: 'customerServiceCoffeJ@outlook.com',
+  Fax: '555-333-4555',
+  Telephone: '809-685-4555',
+};
+
+function ManagerListArr(obj) {
+  for (let prop in obj) {
+    if (obj.hasOwnProperty(prop)) {
+      const tempProp = document.createElement('li');
+      tempProp.classList.add('tempProp');
+      const span = document.createElement('span');
+      span.classList.add('header');
+      const span2 = document.createElement('span');
+      span2.classList.add('response');
+      managerList.appendChild(tempProp);
+      tempProp.appendChild(span);
+      tempProp.appendChild(span2);
+
+      span.innerHTML = prop + ': ';
+      span2.innerHTML = obj[prop];
+    }
+  }
+}
+
+function customerServiceListArr(obj) {
+  for (let prop in obj) {
+    if (obj.hasOwnProperty(prop)) {
+      const tempProp = document.createElement('li');
+      tempProp.classList.add('tempProp');
+      const span = document.createElement('span');
+      span.classList.add('header');
+      const span2 = document.createElement('span');
+      span2.classList.add('response');
+      customerServiceList.appendChild(tempProp);
+      tempProp.appendChild(span);
+      tempProp.appendChild(span2);
+
+      span.innerHTML = prop + ': ';
+      span2.innerHTML = obj[prop];
+    }
+  }
+}
+
+ManagerListArr(managerArr);
+customerServiceListArr(customerServiceArr);
 
 export function contactsCard() {
   body.appendChild(nav);
@@ -44,6 +122,16 @@ export function contactsCard() {
 
   body.appendChild(main);
   main.appendChild(contacts);
+  contacts.appendChild(contactsTitle);
+  contacts.appendChild(manager);
+  manager.appendChild(managerTitle);
+  manager.appendChild(managerList);
+  contacts.appendChild(customerService);
+  customerService.appendChild(customerServiceTitle);
+  customerService.appendChild(customerServiceList);
+  contacts.appendChild(location);
+  location.appendChild(locationTitle);
+  location.appendChild(locationList);
 }
 
 export function contactsCardClear() {

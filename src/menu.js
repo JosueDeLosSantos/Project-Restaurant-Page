@@ -45,7 +45,6 @@ coldTitle.classList.add('coldTitle');
 coldTitle.innerText = 'Cold';
 const coldList = document.createElement('ul');
 coldList.classList.add('coldList');
-const LiElements = document.querySelector('li');
 
 const hotArr = [
   'Americano .............................................................................. 60 RD$',
@@ -119,11 +118,11 @@ export function menuCardClear() {
   section2.removeChild(hours);
   body.removeChild(main);
   main.removeChild(menu);
-  menu.removeChild(menuTitle);
+  /* menu.removeChild(menuTitle);
   menu.removeChild(hot);
   hot.removeChild(hotTitle);
   hot.removeChild(hotList);
   menu.removeChild(cold);
   cold.removeChild(coldTitle);
-  cold.removeChild(coldList);
+  cold.removeChild(coldList); */
 }

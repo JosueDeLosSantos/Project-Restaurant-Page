@@ -483,36 +483,34 @@
     color: var(--motto-color);
   }
 
-  .menuCard{
+  .menuCard, .contactsCard{
     background: var(--menu-card);
     height: 100vh;
     padding: 20px 20px 90px 20px;
   }
 
-  .contactsCard {
-    background: var(--contacts-card);
-    height: 100vh;
-    padding: 20px 20px 90px 20px;
-  }
-
-  .menuTitle {
+  .menuTitle, .contactsTitle {
     color: var(--nav-color);
     font-family: 'bebasnue';
     font-size: 3rem;
   }
 
-  .hotTitle, .coldTitle{
+  .hotTitle, .coldTitle, .managerTitle, .customerServiceTitle, .locationTitle{
     color: var(--nav-color);
     font-size: 1.5rem;
     margin-top: 50px;
     font-family: 'Raleway';
   }
 
-  .hotTitle, .coldTitle, .menuTitle{
+  .locationTitle{
+    margin-bottom: 20px;
+  }
+
+  .hotTitle, .coldTitle, .menuTitle, .managerTitle, .contactsTitle, .customerServiceTitle, .locationTitle {
     text-align: center;
   }
 
-  .hotList, .coldList{
+  .hotList, .coldList, .managerList, .customerServiceList, .locationList{
     list-style: none;
     padding-left: 0;
     color: var(--motto-color);
@@ -521,4 +519,8 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+  }
+
+  .header {
+    font-weight: 600;
   }

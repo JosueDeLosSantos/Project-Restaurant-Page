@@ -357,7 +357,7 @@
     --menu-card: linear-gradient(to bottom right, hsl(21, 37%, 15%), hsl(21deg 100% 15%));
     --contacts-card: linear-gradient(to bottom right, hsl(15, 90%, 84%), hsl(29, 90%, 84%));
   }
-  /*Fonts*/
+  
   @font-face {
     font-family: 'lucy';
     src: url('./fonts/lucy/lucy.ttf') format('ttf'),

@@ -25,10 +25,10 @@ hours.classList.add('hours');
 hours.innerText = 'Hours';
 
 const body = document.querySelector('body');
-export const main = document.createElement('main');
-export const menu = document.createElement('div');
+const main = document.createElement('main');
+const menu = document.createElement('div');
 menu.classList.add('menuCard');
-export const menuTitle = document.createElement('div');
+const menuTitle = document.createElement('div');
 menuTitle.classList.add('menuTitle');
 menuTitle.innerText = 'Coffe Menu';
 const hot = document.createElement('div');
@@ -118,11 +118,4 @@ export function menuCardClear() {
   section2.removeChild(hours);
   body.removeChild(main);
   main.removeChild(menu);
-  /* menu.removeChild(menuTitle);
-  menu.removeChild(hot);
-  hot.removeChild(hotTitle);
-  hot.removeChild(hotList);
-  menu.removeChild(cold);
-  cold.removeChild(coldTitle);
-  cold.removeChild(coldList); */
 }

@@ -25,6 +25,11 @@ home.home.addEventListener('click', () => {
   location.reload();
 });
 
+home.menuLink.addEventListener('click', () => {
+  home.homePageClear();
+  menu.menuCard();
+});
+
 menu.contact.addEventListener('click', () => {
   menu.menuCardClear();
   contacts.contactsCard();

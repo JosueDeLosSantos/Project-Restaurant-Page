@@ -1,6 +1,6 @@
 import coffe from './coffee.svg';
 
-export const body = document.querySelector('body');
+const body = document.querySelector('body');
 const nav = document.createElement('nav');
 const section1 = document.createElement('section');
 section1.classList.add('section1');
@@ -24,8 +24,8 @@ contact.innerText = 'Contacts';
 export const hours = document.createElement('a');
 hours.classList.add('hours');
 hours.innerText = 'Hours';
-export const main = document.createElement('main');
-export const center = document.createElement('div');
+const main = document.createElement('main');
+const center = document.createElement('div');
 center.classList.add('center');
 const welcome = document.createElement('div');
 welcome.classList.add('welcome');
@@ -39,7 +39,7 @@ logoBodyTitle.innerText = 'COFFE J';
 const motto = document.createElement('div');
 motto.classList.add('motto');
 motto.innerText = 'Serving the best coffe in the Dominican Republic!';
-const menuLink = document.createElement('a');
+export const menuLink = document.createElement('a');
 menuLink.classList.add('menuLink');
 menuLink.innerText = 'CHECK OUT OUR MENU';
 
@@ -79,10 +79,4 @@ export function homePageClear() {
   section2.removeChild(hours);
   body.removeChild(main);
   main.removeChild(center);
-  /* center.removeChild(welcome);
-  center.removeChild(centerLogo);
-  centerLogo.removeChild(logoBody);
-  centerLogo.removeChild(logoBodyTitle);
-  center.removeChild(motto);
-  center.removeChild(menuLink); */
 }

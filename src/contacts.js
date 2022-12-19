@@ -25,10 +25,10 @@ export const hours = document.createElement('a');
 hours.classList.add('hours');
 hours.innerText = 'Hours';
 
-export const main = document.createElement('main');
-export const contacts = document.createElement('div');
+const main = document.createElement('main');
+const contacts = document.createElement('div');
 contacts.classList.add('contactsCard');
-export const contactsTitle = document.createElement('div');
+const contactsTitle = document.createElement('div');
 contactsTitle.classList.add('contactsTitle');
 contactsTitle.innerText = 'Contacts';
 const manager = document.createElement('div');

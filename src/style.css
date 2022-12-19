@@ -439,6 +439,15 @@
     font-weight: 100;
   }
 
+  .home, .menu, .contact, .hours {
+    cursor: pointer;
+  }
+
+  .home:hover, .menu:hover, .contact:hover, .hours:hover {
+    font-weight: 600;
+    text-shadow: 2px 2px 20px var(--welcome-color);
+  }
+
 
   main {
     display: flex;
@@ -481,12 +490,22 @@
     text-decoration: underline;
     font-family: 'fire-foxes';
     color: var(--motto-color);
+    cursor: pointer;
+  }
+
+  .menuLink:hover {
+    text-shadow: 2px 2px 10px var(--welcome-color);
   }
 
   .menuCard, .contactsCard, .hoursCard{
     background: var(--menu-card);
     height: 100vh;
     padding: 20px 20px 90px 20px;
+  }
+
+  .hoursCard {
+    width: 30%;
+    padding: 20px 40px 90px 40px;
   }
 
   .menuTitle, .contactsTitle, .HoursTitle, .HoursTitle {
@@ -502,8 +521,8 @@
     font-family: 'Raleway';
   }
 
-  .locationTitle{
-    margin-bottom: 20px;
+  .locationTitle, .HoursTitle, .managerTitle, .customerServiceTitle{
+    margin-bottom: 30px;
   }
 
   .hotTitle, .coldTitle, .menuTitle, .managerTitle, .contactsTitle, .customerServiceTitle, .locationTitle, .HoursTitle {
@@ -521,6 +540,13 @@
     gap: 10px;
   }
 
+  .tempProp {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .header {
     font-weight: 600;
   }
+
+  
